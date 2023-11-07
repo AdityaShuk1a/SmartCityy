@@ -1,139 +1,391 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5769658f33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="smartcity.css">
-    <title>Smart City</title>
-</head>
-<body>
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://images.hdqwalls.com/download/manhattan-new-york-city-4k-je-1366x768.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12% ;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: right;
 
-    <div class="container" >
-         
+}
+.button22:visited{
+    color: black;
+}
+.firstbuttom:visited{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+body{
+    background-color: black;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:60px ;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px ;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 500%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size:11px ;
+    line-height:15px ;
+}
+button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;   
+    margin: 10px 15px;
+    background-image: url;
+    background-position: center;
+    background-size: cover;
+   
+}
+.card img{
+    filter: brightness(60%);
+}
+.card1 img{
+    height: 100%;
     
-    <div class="navbar">
-        <img src="https://th.bing.com/th/id/OIP.NlGyhupfHT909zDfJlYwLwAAAA?pid=ImgDet&rs=1" class="logo">
-        <nav>
-            <ul>
-                <li ><a class="navicon" href="#">     HOME </a></li>
-                <li><a class="navicon" target="_blank" href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/inspired/smart-cities"> About </a></li>
-                <li><a class="navicon" href="https://docs.google.com/forms/d/e/1FAIpQLSeu3ojIDjqP0tXpbkOquYjgnPd5VvB5hPVOVnopkplPhVEclg/viewform?usp=sf_link"> Feedback </a></li>
-            </ul>
-        </nav>
-        
-    </div>
-    <div class="row" >
-        <div class="col" >
-            <h1>SMART CITY</h1>
-            <button type="button" ><a class="firstbuttom" target="_blank" href="https://smartcities.gov.in/" >Explore</a></button>
-        </div>
-        <div class="col" >
-            <div class="card card1" >
-                <a href="https://smartcities.data.gov.in/city/port-blair"><img class="igm" src="https://th.bing.com/th/id/OIP.54jhLLg0_UfRehZIs57kfwHaEc?pid=ImgDet&rs=1" alt=""></a>
-                 
-            </div>
-            <div class="card card2" >
-                <a href="https://www.proptiger.com/guide/post/the-cosmopolitan-smart-city-visakhapatnam"><img class="igm" src="https://th.bing.com/th/id/OIP.rtvBmiH487NkRHGa4iyQ1gHaEa?pid=ImgDet&rs=1"alt=""></a>
-            </div>
-            <br><br>    
-            <div class="card card3" >
-                <a href="https://cdma.ap.gov.in/en/tirupati-smart-city-corporation-limited-spv"><img class="igm" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/Things-To-Do-In-Tirupati-16_dec.jpg"  alt=""></a>
-            </div>
-            <div class="card card4" >
-                <a href="http://www.ksccl.in/"><img class="igm" src="https://d368ufu7xgcs86.cloudfront.net/24487-1583674771.jpg" alt=""></a>
-            </div>
-        </div>
-    </div>
-</div>
+}
+.card2 img{
+    height: 100%;
+    margin-left: 130%;
+}
 
-<section id="third" >
-    <div class="forthd" >
-        <div class="newimg" >
-            <img src="https://www.weforum.org/a-weekly-logo.svg">
-            <div class="para4d" >
+.card3 img{
+    height: 100%;
+    
+    
+}
+.card4 img{
+    height: 100%;
+    margin-left: 130%;
+}
+.card img{
+    border-radius: 20px;
+}
+.card2 img{
+    border-radius: 20px;
+}
+.igm{
+    border-radius: 20px;
+}
+.card img:hover{
+    transition: 0.5s;
+    box-shadow:1px 1px  8px 8px white;
+}
+.navicon:hover{
+    transition: 0.7s;
+    background: white;
+    color: black;
+    border-radius: 7px;
+    border-width: 18%;
+    
+}
+.secondiv p{
+    color: white;
+    
+}
+.secondiv{
+    align-items: center;
+    
+    width: 43%;
+    
+    margin: 0 auto 2% auto;
+}
+.secondiv{
+    margin-top : 12% ;
+    border-radius: 7px;
+    
+    padding: 40px;
+    
+   background-color: #bfbbbb;
+    
+}   
+.para2d{
+    margin-top: 2%;
+    font-size: 25px;
+    margin-bottom: 9%;
+    
+}
+.para2 p{
+    
+    border-radius: 12px;
+    width: 9.74%;
+    padding: 12px 21px ;
+    background-color: black ;
+    font-size: 22px;
+    
+    color: white ;
+    text-align: left;
+}
+.para2{
+    text-align: left;
+    align-items: center;
+}
+.secondb{
+    
+    background-size: cover;
+}
+.button2{
+    background-color: white;
+}
+.thirdiv{
+    align-items: center;
+    
+    width: 43%;
+    padding: 40px;
+    line-height: 80px;
+    margin: 0 auto 2% auto;
+}
+.para3{
+    font-size:23px ;
+    color: white;
+    margin-top: 3%;
+    line-height: 30px;
 
-            
-            <p class="para4" >
-                Global&nbsp;Agenda<br><br><br>
+}
+a{
+    text-decoration: none;
 
-                <Span class="para4s" ><span>The&nbsp;Agenda&nbsp;</span>Weekly</Span><br><br>
-                <span class="neeche" >A&nbsp;Weekly&nbsp;Update&nbsp;of&nbsp;The&nbsp;most&nbsp;Important&nbsp;Issues<br>Driving&nbsp;The&nbsp;Global&nbsp;Agenda</span>
-            </p>
-        </div>
-        </div>
-        <div class="write" >
-            <div class="write2" >
-                <p class="para5" > 
-                    <br><br><br><br><br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="para5" ><a href="#">Donate</a></span>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="fifth" >
-        <p>
-            More on <span id="para4s" >Cities And Urbanization</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="pew" ><a href="#">See All</a></span>
-        </p><br><br><br>
-        <div class="photu" >
-            <div>
-                <img src="https://assets.weforum.org/article/image/responsive_medium_webp_1kNnl4RqxFgKEYkZe7fjyBdeIrvhk75AXP96WvxA35Y.webp" alt="">
-                <p class="para6" >World Cities Day: how 7 leaders are <br>balancing the nexus between <br>urban growth and equity</p><br>
-                <p id="chal" >Nalisha Men</p>
-                <p id="chal2" >October 31,2023</p>
-            </div>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <div>
-                <img src="https://assets.weforum.org/article/image/responsive_medium_webp_GBNNAVsysEfTxeDP_LMeTEbbd5UcYCsT0mzWb2PyKaA.webp" alt="">
-                <p class="para6" >Ground-breaking urban public-private <br>collaborations and other city-focused <br>stories you need to read</p><br>
-                <p id="chal" >Lisa Chamberlain</p>
-                <p id="chal2" >October 25, 2023</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="secondb" >
-    <div class="secondiv" >
-        <div class="para2" >
-        <p  >Discover</p></div><br>
-        <p class="para2d" >
-            How is the World Economic Forum supporting the development<br><br> of cities and communities globally?
-        </p>
-        <button class="button2" type="button" ><a class="button22" target="_blank" href="https://www.bing.com/search?pglt=675&q=world+economic+forum&cvid=fd0269f5407d4cd7b2d19e1977ea58a9&gs_lcrp=EgZjaHJvbWUqBAgAEC4yBAgAEC4yBggBEEUYOTIECAIQADIECAMQADIECAQQADIECAUQADIECAYQADIECAcQADIECAgQANIBCDQzMzhqMGoxqAIAsAIA&FORM=ANNTA1&PC=ASTS" >More</a></button>
-    </div>
-    <div>
-        <img>
+}
+.para3  a:visited{
+    color: grey;
+}
+.link{
+    background-color: white;
+    padding: 10px 11px ;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+.link:hover{
+    background-color: rgb(90, 90, 157);
+    transition: 0.7s;
+    color: white;
+}
+.navicon{
+    padding: 10px 10px;
+}
+.logo{
+    height: 80px;
+    width: 7%;
+}
+.para1{
+    text-align: center;
+    position: absolute;
+    top: 37%;
+    margin: 0 auto 0 auto;
+    color: black;
+    padding: 120px;
+    font-size: 20px;
+    filter: brightness(100%)
+    ;
+}
+.imgname{
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 8px;
+    filter: brightness(90);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.forthd{
+    display: flex;
+    background-color: black;
+    padding: 7% 15%;
+}
+.newimg{
+    display: flex;
+    justify-content: space-around;
+}
 
-        <p></p>
-    </div>
-    <div class="thirdiv" >
-            <p class="para3" >
-                Michael Donaldson, Chief Technology Officer of the City of Barcelona, said that he has seen a shift in the understanding of smart cities from associations with data and technology to a layered definition embracing “citizen intelligence” and “humanizing technology.” Barcelona’s digital participatory platform enables citizens to help direct city management by suggesting ideas. “Citizens have a lot of experience about the city, and we need to gather this intelligence in order to make better decisions,” he said.
-            </p>
-            <p class="para3" >
-                Alice Charles, Head of Cities and Real Estate at the World Economic Forum, noted the changing role of the private sector in smart cities from “selling widgets and gadgets to the cities” to “promoting an outcome-driven model.” Companies are focusing on technologies that help urban leaders achieve their goals. This model requires stronger partnerships among cities, the private sector, civil society, and academia. Examples include the Smart Cities Challenge by Infrastructure Canada; City Possible, by Mastercard; and the Helsinki Energy Challenge.
-            </p>
-            <p class="para3" >
-                Martin Weiss, Professor at the University of Pittsburgh, sees an opportunity in the wake of COVID-19 to find out what alternative smart worlds would look like. Digital technology has stood out, as it facilitates remote work, private and public online service delivery, and contactless interactions. He said, “We will focus on different questions than before, like how we make access to high-speed services less dependent on heavy infrastructure investments.”
-            </p>
-            <p class="para3" >
-                Pedro Vidal, Intelligent Transport Systems Coordinator at the Chilean Ministry of Transport and Telecommunications, said that the pandemic hit mobility and public transportation services hard. “We have made alliances with universities to understand behavioral trends and are convinced that there are some changes in mobility preferences,” he said. “We created lanes for bicycles and developed measures for using public spaces in a safe way. We have seen an increase in the use of public transport. This can be transformed into a big opportunity to have a more sustainable city.”
-            </p>
-            <p class="para3" >##Want to see full recording<a target="_blank" href="https://olccustext.worldbank.org/redirection/content/smart-cities-week-2-smart-what-makes-city-and-its-citizens-%E2%80%98smart%E2%80%99" > <span class="link" >Click Here</span></a></p>
-            <p class="para3" ></p>
-    </div>
-</section>
-<section>
-    <div class="footer" >
-        <div class="mainfooter" >
-            <p class="icons" ><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-heart"></i> </p>
-            <p class="neecher" >Student Education rights (Made by College Students)</p>
-        </div>
-        
-    </div>
-</section>
-<div class="downfooter" >
-    <p class="last" >"When cities get smart, life gets easier." Made with <i class="fa-solid fa-heart"></i> by Aditya Shukla and Team! </p>
-</div>
-</body>
-</html>
+.para4{
+    margin-left: 2%;
+    font-size: 25px;
+    color: grey;
+    line-height: 80%;
+}
+.para4d{
+    margin-left: 2%;
+}
+.para4s{
+    color: white;
+    font-size: 35px;
+}
+.para4s span{
+    font-weight: bold;
+}
+.neeche{
+    color: white;
+    font-size: 18px;
+}
+.write{
+    align-items: right;
+}
+#para5{
+    font-size: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+}
+#para5:hover{
+    box-shadow: 1px 1px  8px 8px white;
+    border-radius: 15px;
+    
+    
+    transition: 0.7s;
+}
+#para5 a:hover{
+    
+}
+a{
+    text-decoration: none;
+}
+#para5 a:visited{
+    color: white;
+    
+}
+.fifth p{
+    margin-top: 8%;
+    font-size: 35px;
+    margin-left: 4%;
+
+}
+.fifth{
+    height: 1210px;
+    background-color:rgb(26, 25, 25);
+    padding: 40px;
+}
+#para4s{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+#pew{
+    font-size: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+}
+a:visited{
+    color: white;
+}
+#pew:hover{
+    box-shadow: 1px 1px  8px 8px white;
+    border-radius: 15px;
+    color: white;
+    
+    transition: 0.7s;
+}
+a{
+    text-decoration: none;
+}
+.photu{
+    display: flex;
+    margin-left:4% ;
+}
+.photu img{
+    height: 480px;
+}
+.para6{
+    line-height: 40px;
+}
+#chal{
+    color: white;
+    font-size: 24px ;
+}
+#chal2{
+    color: grey;
+    font-size: 24px;
+}
+.footer{
+    background-color: #353535;
+    padding: 110px;
+    height: 5px;
+}
+.mainfooter .icons{
+    
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+ .icons .fa-heart{
+    color: white  ;
+}
+.neecher{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 22px;
+    
+}
+.downfooter{
+    background-color:#353535;
+    text-align: center;
+    font-size: 35px;
+    padding:40px;
+}
+.last{
+    font-size: 25px;
+    color: white;
+}
+.last .fa-heart{
+    color: red;
+}
