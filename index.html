@@ -7,6 +7,399 @@
     <link rel="stylesheet" href="smartcity.css">
     <title>Smart City</title>
 </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://images.hdqwalls.com/download/manhattan-new-york-city-4k-je-1366x768.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12% ;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: right;
+
+}
+.button22:visited{
+    color: black;
+}
+.firstbuttom:visited{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+body{
+    background-color: black;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:60px ;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px ;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 500%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size:11px ;
+    line-height:15px ;
+}
+button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;   
+    margin: 10px 15px;
+    background-image: url;
+    background-position: center;
+    background-size: cover;
+   
+}
+.card img{
+    filter: brightness(60%);
+}
+.card1 img{
+    height: 100%;
+    
+}
+.card2 img{
+    height: 100%;
+    margin-left: 130%;
+}
+
+.card3 img{
+    height: 100%;
+    
+    
+}
+.card4 img{
+    height: 100%;
+    margin-left: 130%;
+}
+.card img{
+    border-radius: 20px;
+}
+.card2 img{
+    border-radius: 20px;
+}
+.igm{
+    border-radius: 20px;
+}
+.card img:hover{
+    transition: 0.5s;
+    box-shadow:1px 1px  8px 8px white;
+}
+.navicon:hover{
+    transition: 0.7s;
+    background: white;
+    color: black;
+    border-radius: 7px;
+    border-width: 18%;
+    
+}
+.secondiv p{
+    color: white;
+    
+}
+.secondiv{
+    align-items: center;
+    
+    width: 43%;
+    
+    margin: 0 auto 2% auto;
+}
+.secondiv{
+    margin-top : 12% ;
+    border-radius: 7px;
+    
+    padding: 40px;
+    
+   background-color: #bfbbbb;
+    
+}   
+.para2d{
+    margin-top: 2%;
+    font-size: 25px;
+    margin-bottom: 9%;
+    
+}
+.para2 p{
+    
+    border-radius: 12px;
+    width: 9.74%;
+    padding: 12px 21px ;
+    background-color: black ;
+    font-size: 22px;
+    
+    color: white ;
+    text-align: left;
+}
+.para2{
+    text-align: left;
+    align-items: center;
+}
+.secondb{
+    
+    background-size: cover;
+}
+.button2{
+    background-color: white;
+}
+.thirdiv{
+    align-items: center;
+    
+    width: 43%;
+    padding: 40px;
+    line-height: 80px;
+    margin: 0 auto 2% auto;
+}
+.para3{
+    font-size:23px ;
+    color: white;
+    margin-top: 3%;
+    line-height: 30px;
+
+}
+a{
+    text-decoration: none;
+
+}
+.para3  a:visited{
+    color: grey;
+}
+.link{
+    background-color: white;
+    padding: 10px 11px ;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+.link:hover{
+    background-color: rgb(90, 90, 157);
+    transition: 0.7s;
+    color: white;
+}
+.navicon{
+    padding: 10px 10px;
+}
+.logo{
+    height: 80px;
+    width: 7%;
+}
+.para1{
+    text-align: center;
+    position: absolute;
+    top: 37%;
+    margin: 0 auto 0 auto;
+    color: black;
+    padding: 120px;
+    font-size: 20px;
+    filter: brightness(100%)
+    ;
+}
+.imgname{
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 8px;
+    filter: brightness(90);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.forthd{
+    display: flex;
+    background-color: black;
+    padding: 7% 15%;
+}
+.newimg{
+    display: flex;
+    justify-content: space-around;
+}
+
+.para4{
+    margin-left: 2%;
+    font-size: 25px;
+    color: grey;
+    line-height: 80%;
+}
+.para4d{
+    margin-left: 2%;
+}
+.para4s{
+    color: white;
+    font-size: 35px;
+}
+.para4s span{
+    font-weight: bold;
+}
+.neeche{
+    color: white;
+    font-size: 18px;
+}
+.write{
+    align-items: right;
+}
+#para5{
+    font-size: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+}
+#para5:hover{
+    box-shadow: 1px 1px  8px 8px white;
+    border-radius: 15px;
+    
+    
+    transition: 0.7s;
+}
+#para5 a:hover{
+    
+}
+a{
+    text-decoration: none;
+}
+#para5 a:visited{
+    color: white;
+    
+}
+.fifth p{
+    margin-top: 8%;
+    font-size: 35px;
+    margin-left: 4%;
+
+}
+.fifth{
+    height: 1210px;
+    background-color:rgb(26, 25, 25);
+    padding: 40px;
+}
+#para4s{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+#pew{
+    font-size: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+}
+a:visited{
+    color: white;
+}
+#pew:hover{
+    box-shadow: 1px 1px  8px 8px white;
+    border-radius: 15px;
+    color: white;
+    
+    transition: 0.7s;
+}
+a{
+    text-decoration: none;
+}
+.photu{
+    display: flex;
+    margin-left:4% ;
+}
+.photu img{
+    height: 480px;
+}
+.para6{
+    line-height: 40px;
+}
+#chal{
+    color: white;
+    font-size: 24px ;
+}
+#chal2{
+    color: grey;
+    font-size: 24px;
+}
+.footer{
+    background-color: #353535;
+    padding: 110px;
+    height: 5px;
+}
+.mainfooter .icons{
+    
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+ .icons .fa-heart{
+    color: white  ;
+}
+.neecher{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 22px;
+    
+}
+.downfooter{
+    background-color:#353535;
+    text-align: center;
+    font-size: 35px;
+    padding:40px;
+}
+.last{
+    font-size: 25px;
+    color: white;
+}
+.last .fa-heart{
+    color: red;
+}
+    </style>
 <body>
 
     <div class="container" >
